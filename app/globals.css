@@ -1,0 +1,59 @@
+import { createGlobalStyle } from 'styled-components'; // Import styled-components for global styles
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; // Use a clean, modern font
+    background-color: #000; // Set background to black
+    color: #fff; // Set text color to white for contrast
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ff69b4; // Pink color for headings
+    font-weight: bold; // Bold headings for elegance
+  }
+
+  a {
+    color: #ff69b4; // Pink color for links
+    text-decoration: none; // Remove underline from links
+    &:hover {
+      text-decoration: underline; // Underline on hover for interactivity
+    }
+  }
+
+  button {
+    background-color: #ff69b4; // Pink button background
+    color: #000; // Black text for buttons
+    border: none; // No border for buttons
+    padding: 10px 20px; // Padding for buttons
+    border-radius: 5px; // Rounded corners for buttons
+    cursor: pointer; // Pointer cursor for buttons
+    transition: background-color 0.3s; // Smooth transition for hover effect
+    &:hover {
+      background-color: #ff1493; // Darker pink on hover
+    }
+  }
+
+  // Additional styles for luxury feel
+  .container {
+    max-width: 1200px; // Max width for content
+    margin: 0 auto; // Center the container
+    padding: 20px; // Padding for container
+  }
+
+  // Custom scrollbar for a unique look
+  ::-webkit-scrollbar {
+    width: 8px; // Width of the scrollbar
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ff69b4; // Pink scrollbar thumb
+    border-radius: 10px; // Rounded scrollbar thumb
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #333; // Dark background for scrollbar track
+  }
+`;
+
+export default GlobalStyle; // Export the global styles for use in the app
